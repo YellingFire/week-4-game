@@ -1,0 +1,42 @@
+.instructionBlock {
+    border: solid 5px black;
+    width: 60%;
+    height: 320px;
+    padding: 15px;
+
+}
+
+.gameField {
+    font-size: 70px;
+    font-weight: bold;
+    border: solid 5px black;
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+.scoreField {
+    border: solid 5px black;
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.userScore {
+    font-size: 70px;
+    font-weight: bold;
+    border: solid 5px black;
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    margin-top: 20px;
+
+}
+
+.btn-cryst {
+    /* padding: 20px; */
+    margin: 10px;
+}
