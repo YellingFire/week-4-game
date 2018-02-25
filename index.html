@@ -15,69 +15,75 @@
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- This is the title head -->
-        <div class="row">
-            <div class="col-">
-                    <h1>Crystals Collector!</h1>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><img src="assets/images/titleImage.png"></div>
             </div>            
-        </div>
+        </div>        
+    </header>
+    <div class="container">
         <!-- Instruction Section -->
         <div class="row">
-            <div class="col-">
+            <div class="col-6">
                 <div class="instructionBlock">
-                    <p>Your will be given a random number at the start of the game.<br><br>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your local score.<br><br>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.<br><br>The value of each crystal is hidden from you until you click on it.<br><br>Each time when the game starts, the game will change the values of each crystal.</p>
+                    <image src="assets/images/canvas-back2.png"></image>
 
-                </div>                
+                </div>
             </div>
-        </div>
-        <!-- This is the Game Field, Computer defined random number and score field -->
-        <div class="row">
-            <div class="col-">
-                <div class="gameField"></div>                
-            </div>
-            <div class="scoreField">
-                <div class="col-">
-                    <div class="row">
-                        <div class="col-6">
-                                <div><h3>Score:</h3></div>
-                        </div>                  
+            <!-- This is the Game Field, Computer defined random number and score field -->
+            <div class="col-6">
+                <div class="row">
+                <!--ScoreCard Stars Here  -->
+                    <div class="col-3">                                  
+                        <div class="scoreField">                    
+                            <div class="row">
+                                <div class="col-6">
+                                        <div><h4>Score</h4></div>
+                                </div>                  
+                            </div>
+                            <div class="row">
+                                    <div class="col-6">
+                                            <div><h3>Wins:</h3></div>
+                                    </div>
+                                    <div class="col-6">
+                                            <div><span id="wins"></span></div>
+                                    </div>
+                            </div>        
+                            <div class="row">
+                                    <div class="col-6">
+                                            <div><h3>Losses:</h3></div>
+                                    </div>
+                                    <div class="col-6">
+                                            <div><span id="losses"></span></div>
+                                    </div>
+                            </div>                    
+                        </div>
                     </div>
-                    <div class="row">
-                            <div class="col-6">
-                                    <div><h3>Wins:</h3></div>
-                            </div>
-                            <div class="col-6">
-                                    <div><span id="wins"></span></div>
-                            </div>
-                    </div>        
-                    <div class="row">
-                            <div class="col-6">
-                                    <div><h3>Losses:</h3></div>
-                            </div>
-                            <div class="col-6">
-                                    <div><span id="losses"></span></div>
-                            </div>
-                    </div>                    
                 </div>
-            </div>                
-        </div>
-        <!-- User guess "Crystals" will be displayed here -->
-        <div class="row">
-            <div class="col-">
-                <div class="userGuess">
-                    <button id="crystOne" type="button" class="btn btn-cryst btn-danger">crystOne</button><button id="crystTwo" type="button" class="btn btn-cryst btn-danger">crystTwo</button><button id="crystThree" type="button" class="btn btn-cryst btn-danger">crystThree</button><button id="crystFour" type="button" class="btn btn-cryst btn-danger">crystFour</button>
-                </div>
+                <!-- GameField and UserScore -->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="gameField"></div>
+                    </div>
+                    <div class="col-6">
+                        <!-- User Score will be displayed here -->
+                                           
+                    </div>   
+                </div>               
             </div>
         </div>
-        <!-- User Score will be displayed here -->
         <div class="row">
-            <div class="userScore">
-
+            <!-- User guess "Crystals" will be displayed here -->
+            <div class="col-3">
+                    <div class="userScore"></div> 
             </div>
+            <div class="col-7">
+                <div class="userGuess"></div>                            
+                    <img src="assets/images/blueGem.png" class="btn-cryst" id="crystOne" width="125px" height="125px"><img src="assets/images/greenGem.png" class="btn-cryst" id="crystTwo" width="125px" height="125px"><img src="assets/images/redGem.png" class="btn-cryst" id="crystThree" width="125px" height="125px"><img src="assets/images/tealGem.png" class="btn-cryst" id="crystFour" width="125px" height="125px">
+            </div>
+            <div class="col-2"></div>
         </div>
-        
-    </div>
-    
+    </div>    
 </body>
 </html>
